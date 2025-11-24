@@ -3,7 +3,7 @@ resource "aws_launch_template" "web_server_as" {
     image_id = "ami-0fa3fe0fa7920f68e"
     vpc_security_group_ids = [aws_security_group.web_server.id]
     instance_type = "t3.micro"
-    key_name = "RBKEY"
+    key_name = "MAINKEY"
     tags = {
         Name = "RBDevOps"
     }
